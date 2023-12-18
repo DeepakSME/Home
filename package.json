@@ -6,8 +6,11 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "home": "nodemon run home",
-    "migrate": "sequelize-auto -o './models' -d database_devlopment -h localhost -u deepak -p 5432 -x Note7@484 -e postgres"
-  },
+    "db": "npx sequelize-cli db:create",
+    "migrate":"npx sequelize-cli db:migrate --name master-migration",
+    "migrate-auto": "sequelize-auto -o './models' -d database_devlopment -h localhost -u deepak -p 5432 -x Note7@484 -e postgres",
+    "db_create": "npm run db  && npm run migrate && npm run migate-auto"
+ },
   "author": "",
   "license": "ISC",
   "dependencies": {

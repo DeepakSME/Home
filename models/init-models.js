@@ -2,7 +2,6 @@ var DataTypes = require("sequelize").DataTypes;
 var _Country = require("./Country");
 var _SequelizeMeta = require("./SequelizeMeta");
 var _State = require("./State");
-var _Users = require("./Users");
 var _attachment_company = require("./attachment_company");
 var _attachment_portfolio = require("./attachment_portfolio");
 var _category = require("./category");
@@ -24,7 +23,6 @@ function initModels(sequelize) {
   var Country = _Country(sequelize, DataTypes);
   var SequelizeMeta = _SequelizeMeta(sequelize, DataTypes);
   var State = _State(sequelize, DataTypes);
-  var Users = _Users(sequelize, DataTypes);
   var attachment_company = _attachment_company(sequelize, DataTypes);
   var attachment_portfolio = _attachment_portfolio(sequelize, DataTypes);
   var category = _category(sequelize, DataTypes);
@@ -47,7 +45,6 @@ function initModels(sequelize) {
     Country,
     SequelizeMeta,
     State,
-    Users,
     attachment_company,
     attachment_portfolio,
     category,

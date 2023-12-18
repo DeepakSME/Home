@@ -26,5 +26,20 @@ module.exports = connection
 
 
 
+//migration script//
+
+//npm install -g sequelize-cli
+
+//npx sequelize-cli db:migrate --name master-migration
+
+
+//npm install -g sequelize-auto
+
+//sequelize-auto -o './models' -d database_devlopment -h localhost -u deepak -p 5432 -x Note7@484 -e postgres
+
+
+
+
+
 
 
