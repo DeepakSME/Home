@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "home": "nodemon run home"
+    "home": "nodemon run home",
+    "migrate": "sequelize-auto -o './models' -d database_devlopment -h localhost -u deepak -p 5432 -x Note7@484 -e postgres"
   },
   "author": "",
   "license": "ISC",
