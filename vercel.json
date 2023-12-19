@@ -6,5 +6,9 @@
     ],
     "routes": [
        { "src": "/(.*)", "dest": "/" }
-    ]
+    ],
+    "env": {
+      "DATABASE_URL": "postgres://default:t2ehyPsq4rBW@ep-weathered-dew-52172418-pooler.us-east-1.postgres.vercel-storage.com:5432/verceldb"
+    },
+    "postbuild": "npm install"
  }
