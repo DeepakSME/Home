@@ -1,5 +1,6 @@
 const initModels = require('../models/init-models');
 const { Sequelize } = require('sequelize');
+const pg = require('pg')
 
 const sequelize = new Sequelize({
   dialect: 'postgres',
