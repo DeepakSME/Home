@@ -9,15 +9,6 @@ let dbConfig = {
     host: 'localhost'
 }
 
-
-const { Pool } = pg;
-
-const pool = new Pool({
-  connectionString: process.env.POSTGRES_URL + "?sslmode=require",
-})
-
-
-
 const sequeliseTZ = new Sequelize(dbConfig.db_name, dbConfig.db_user, dbConfig.password,{
     host:dbConfig.host,
     dialect: dbConfig.cont_type,
