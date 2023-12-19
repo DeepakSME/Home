@@ -1,5 +1,6 @@
 const initModels = require('../models/init-models')
 const { Sequelize } = require('sequelize');
+const pg = require('pg');
 
 // const sequelize = new Sequelize('company', 'deepak', 'Note7@484', {
 //   host: 'localhost',
@@ -8,8 +9,7 @@ const { Sequelize } = require('sequelize');
 
 const postgresURL = "postgres://default:t2ehyPsq4rBW@ep-weathered-dew-52172418-pooler.us-east-1.postgres.vercel-storage.com:5432/verceldb"
 const sequelize = new Sequelize(postgresURL, {
-    dialect: 'postgres', // Specify the dialect
-    logging: false, // Disable logging of SQL queries (optional)
+    dialectModule: pg
   });
 
 const models = initModels(sequelize);
