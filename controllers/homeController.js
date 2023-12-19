@@ -1,4 +1,4 @@
-const CategoryModel = require('../models/Category')
+const CategoryModel = require('../models/category')
 
 
 
@@ -22,7 +22,7 @@ const list = async (req, rest) => {
         // let datadelete = await CategoryModel.destroy({
         //     where:{category_id:101}
         // })
-        let result = await Category.findAll();
+        let result = await category.findAll();
         // let result = {text:"data is coming from the server"}
             rest.status(200).json(result)
     }catch(e){
