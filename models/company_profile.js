@@ -105,6 +105,10 @@ module.exports = function(sequelize, DataTypes) {
     feedback_id: {
       type: DataTypes.INTEGER,
       allowNull: true
+    },
+    analytics_id: {
+      type: DataTypes.INTEGER,
+      allowNull: true
     }
   }, {
     sequelize,

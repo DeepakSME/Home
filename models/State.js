@@ -1,6 +1,6 @@
 const Sequelize = require('sequelize');
 module.exports = function(sequelize, DataTypes) {
-  return sequelize.define('State', {
+  return sequelize.define('state', {
     state_id: {
       type: DataTypes.INTEGER,
       allowNull: false,
@@ -12,12 +12,12 @@ module.exports = function(sequelize, DataTypes) {
     }
   }, {
     sequelize,
-    tableName: 'State',
+    tableName: 'state',
     schema: 'public',
     timestamps: false,
     indexes: [
       {
-        name: "State_pkey",
+        name: "state_pkey",
         unique: true,
         fields: [
           { name: "state_id" },

@@ -1,11 +1,11 @@
 {
   "development": {
     "dialect": "postgres",
-    "host": "ep-weathered-dew-52172418-pooler.us-east-1.postgres.vercel-storage.com",
+    "host": "localhost",
     "port": 5432,
-    "username": "default",
-    "password": "t2ehyPsq4rBW",
-    "database": "verceldb"
+    "username": "deepak",
+    "password": "Note7@484",
+    "database": "devlopment_db"
   }
 }
 

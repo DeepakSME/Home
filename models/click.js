@@ -1,34 +1,30 @@
 const Sequelize = require('sequelize');
 module.exports = function(sequelize, DataTypes) {
-  return sequelize.define('vendors', {
-    vendor_id: {
+  return sequelize.define('click', {
+    click_id: {
       type: DataTypes.INTEGER,
       allowNull: false,
       primaryKey: true
     },
-    vendor_email: {
-      type: DataTypes.TEXT,
-      allowNull: true
-    },
-    vendor_password: {
-      type: DataTypes.TEXT,
-      allowNull: true
-    },
-    vendor_Payment_id: {
+    analytics_click_id: {
       type: DataTypes.INTEGER,
+      allowNull: true
+    },
+    click_ip: {
+      type: DataTypes.TEXT,
       allowNull: true
     }
   }, {
     sequelize,
-    tableName: 'vendors',
+    tableName: 'click',
     schema: 'public',
     timestamps: false,
     indexes: [
       {
-        name: "vendors_pkey",
+        name: "click_pkey",
         unique: true,
         fields: [
-          { name: "vendor_id" },
+          { name: "click_id" },
         ]
       },
     ]

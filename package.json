@@ -8,8 +8,8 @@
     "home": "nodemon run home",
     "db": "npx sequelize-cli db:create",
     "migrate": "npx sequelize-cli db:migrate --name master-migration",
-    "migrate-auto": "sequelize-auto -o './models' -d database_devlopment -h localhost -u deepak -p 5432 -x Note7@484 -e postgres",
-    "db_create": "npm run db  && npm run migrate && npm run migate-auto"
+    "migrate-auto": "sequelize-auto -o './models' -d devlopment_db -h localhost -u deepak -p 5432 -x Note7@484 -e postgres",
+    "db_create": "npm run db  && npm run migrate && npm run migrate-auto"
   },
   "author": "",
   "license": "ISC",
