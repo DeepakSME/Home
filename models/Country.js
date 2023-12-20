@@ -30,3 +30,6 @@ module.exports = function(sequelize, DataTypes) {
     ]
   });
 };
+
+
+// changing name
